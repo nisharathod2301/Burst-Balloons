@@ -6,7 +6,7 @@ class Solution:
             if l>r:
                 return 0 #exhausted all the ballons
             if (l, r) in dp:
-                return dp[(1,r)]
+                return dp[(l,r)]
             
             dp[(l,r)] = 0
             for i in range(l,r+1):
